@@ -4,7 +4,7 @@
 		<Platform Name="Win32"/></Platforms>
 	<Configurations>
 		<Configuration Name="Debug|Win32">
-				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" UseMkl="mklParallel"/>
 				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
 				<Tool Name="VFResourceCompilerTool"/>
 				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
@@ -27,11 +27,18 @@
 		<Filter Name="Header Files" Filter="fi;fd"/>
 		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
 		<File RelativePath=".\CorrectSegImage.dat"/>
+		<File RelativePath=".\error.dat"/>
 		<File RelativePath=".\plotMR.gnu"/>
-		<File RelativePath=".\plotSeg.gnu"/>
+		<File RelativePath=".\plotSeg.gp"/>
 		<File RelativePath=".\SegImage.ps"/>
+		<File RelativePath=".\SegLocal.pdf"/>
+		<File RelativePath=".\SegLocal.ps"/>
+		<File RelativePath=".\SegSA.dat"/>
+		<File RelativePath=".\SegSA.pdf"/>
+		<File RelativePath=".\SegSA.ps"/>
 		<File RelativePath=".\SimMRimage.dat"/>
-		<File RelativePath=".\SimMRimage.ps"/></Filter>
+		<File RelativePath=".\SimMRimage.ps"/>
+		<File RelativePath=".\TAcceptRate.dat"/></Filter>
 		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
 		<File RelativePath=".\MRTSegmentierung.f90"/></Filter>
 		<File RelativePath=".\ReadMe.txt"/></Files>
